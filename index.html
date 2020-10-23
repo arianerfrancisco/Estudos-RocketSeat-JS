@@ -6,45 +6,51 @@
     <title>Curso Javascript</title>
 </head>
 <body>
-
-gostoso
-
-
-    <script>
-    // ============== DECLARAÇÃO DE VARIÁVEL ================ // 
+    ======= CURSO ROCKETSEAT ===========
+    <script>  
+// ========================= DECLARAÇÃO DE VARIÁVEL =========================== // 
          // No Javascript não é necessário definir o tipo da variável //
-         var nome = "Ariane"; // string//
-         var nome = alunos; // string//
-         var idade = 23; // inteiro//
-         var peso = 10.2; // float//
-         var humano = true; // booleanos//
-         var alunos = ['Diego','Gabriel','Londrina']; //vetores - array//
+        var nome = "Ariane"; // string//
+        var nome = alunos; // string//
+        var idade = 23; // inteiro//
+        var peso = 10.2; // float//
+        var humano = true; // booleanos//
+        var alunos = ['Diego','Gabriel','Londrina']; //vetores - array//
         // uma variável pode ser uma propriedade de um objeto//
-         var aluno ={
+        var aluno ={
              //objetos- onde vários dados da variável são armazenadas, onde todas as variáveis anteriores podem estar//
             nome: "Ariane",
             //nome: alunos, ou nome: alunos[1] > indicando a posição //
             idade: 23,
             peso: 10.2,
          };
-        console.log(alunos); // para acessar alguma propriedade //
-        console.log(alunos.[1]); //propriedade de um array .[posição]// 
-        console.log(alunos.peso); //propriedade de um objeto .propriedade// 
-
-        // ============== DECLARAÇÃO DE VARIÁVEL ================ // 
-
-
-        // =========== OPERAÇÕES MATEMÁTICAS ============= // 
+        //console.log(alunos); // para acessar alguma propriedade //
+        //console.log(alunos.[1]); //propriedade de um array .[posição]// 
+        //console.log(alunos.peso); //propriedade de um objeto .propriedade// 
+// =========================== DECLARAÇÃO DE VARIÁVEL ==================== // 
 
 
-
-
-
-
-
-
+// ========================== OPERAÇÕES MATEMÁTICAS ========================== // 
+        var x = 10, y = 5;
+        var resultado = x + y;
+        x += 3; // operacao de incremento //
+        console.log(resultado);
         
-        // =========== OPERAÇÕES MATEMÁTICAS ============= // 
+// ========================= OPERAÇÕES MATEMÁTICAS =========================== // 
+
+
+
+// ========================= DEFININDO FUNÇÕES ==============================//
+        function soma(numero1,numero2) {
+            // corpo da função //
+            var resultado = numero1 + numero2; // quando definimos uma variável dentro do corpo de uma função, só irá funcionar dentro dela // 
+            return resultado;
+        }
+
+        var resultado = soma (1,2) // função que foi definida com os parâmetros // // definindo a variavel resultado fora do corpo da função // 
+        console.log(resultado);
+
+// ====================== DEFININDO FUNÇÕES ===========================//
     </script>
 </body>
 </html>
