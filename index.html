@@ -10,20 +10,20 @@
     <script>  
 // ========================= ÍNICIO DECLARAÇÃO DE VARIÁVEL =========================== // 
 // No Javascript não é necessário definir o tipo da variável - são dinâmicas 
-        var nome = "Ariane"; // string
-        var nome = alunos; // string
-        var idade = 23; // inteiro
-        var peso = 10.2; // float
-        var humano = true; // booleanos
-        var alunos = ['Diego','Gabriel','Londrina']; //vetores - array
-        // uma variável pode ser uma propriedade de um objeto
-        var aluno ={
+        //var nome = "Ariane"; // string
+       // var nome = alunos; // array
+       // var idade = 23; // inteiro
+       // var peso = 10.2; // float
+       // var humano = true; // booleanos
+       // var alunos = ['Diego','Gabriel','Londrina']; //vetores - array
+       // // uma variável pode ser uma propriedade de um objeto
+        //var aluno ={
              //objetos- onde várias propriedades de uma  variável são armazenadas > podendo incluir variáveis anteriores já definidas
-            nome: "Ariane",
+           // nome: "Manuel",
             //nome: alunos, ou nome: alunos[1] > indicando a posição 
-            idade: 23,
-            peso: 10.2,
-         };
+          //  idade: 83,
+          //  peso: 0.2,
+      ///   };
         //console.log(alunos); >> // ()para acessar alguma propriedade 
         //console.log(alunos.[1]); //propriedade de um array .[posição] 
         //console.log(alunos.peso); //propriedade de um objeto .propriedade
@@ -31,41 +31,95 @@
 
 
 // ========================== ÍNICIO OPERAÇÕES MATEMÁTICAS ========================== // 
-        var x = 10, y = 5;
-        var resultado = x + y;
-        x += 3; // operação de incremento //
-        console.log(resultado);
+        //var x = 10, y = 5;
+       // var resultado = x + y;
+      //  x += 3; // operação de incremento //
+      //  console.log(resultado);
         
 // ========================= FIM OPERAÇÕES MATEMÁTICAS =========================== //
 
 
 
 // ========================= ÍNICIO DEFININDO FUNÇÕES ==============================
-        function soma(numero1,numero2) {
+      //  function soma(numero1,numero2) {
             // corpo da função //
-            var resultado = numero1 + numero2; // quando definimos uma variável dentro do corpo de uma função, só irá funcionar dentro dela 
-            return resultado;
-        }
+           // var resultado = numero1 + numero2; // quando definimos uma variável dentro do corpo de uma função, só irá funcionar dentro dela 
+         //   return resultado;
+      //  }
 
-        var resultado = soma (1,2) // função que foi definida com os parâmetros // // definindo a variavel resultado fora do corpo da função 
-        console.log(resultado); // console.log << retorno em tela.
+      //  var resultado = soma (1,2) // função que foi definida com os parâmetros // // definindo a variavel resultado fora do corpo da função 
+        //console.log(resultado); // console.log << retorno em tela.
 
 // ====================== FIM DEFININDO FUNÇÕES ============================================//
 
+// ======================= ÍNICIO CONDICIONAIS ======================================================//
+        //function retornaSexo(sexo) {
+           // if (sexo === 'M') {
+                //return 'Masculino';
+           // } else if (sexo === 'F'){
+              //  return 'Feminino';
+            //} else {
+               // return 'Outro';
+            //}
+        //}
+        //var resultado = retornaSexo('M')
+        //console.log(resultado)
+// outra forma de condicional > SWITCH CASE
+        //function outroRetornaSexo(sexo) {
+            //switch (sexo) {
+                //case 'M':
+                   // return 'Masculino';
+               // case 'F':
+                    //return 'Feminino';
+               // default:
+                    //return 'Outro';
+          //  }
+        //}
+// ======================= FIM CONDICIONAIS ======================================================//
+
+
+
+// (== VERIFICA A IGUALDADE DOS VALORES) (=== ALÉM DE VERIFICAR A IGUALDADE DOS VALORES, VERIFICARÁ SE O TIPO DELAS SÃO IGUAIS)
 
 // ========================= ÍNICIO OPERADORES LÓGICOS =====================================//
-// AND(&&), OR, NOT
-        var sexo = 'M', idade =23;
+// AND(&&), OR(||), NOT (!==) 
+        //var sexo = 'M', idade =23; 
 
-        if (sexo == 'M' && idade > 18) {
-            console.log('OK');
-        }
-
-
-
+        //if (sexo == 'M' || idade > 18) {
+           // console.log('OK');
+       // }
+        //if (sexo !== 'F') {
+           // console.log('OK');
+       // }
+        //var masculino = sexo === "M"; // armazenando essa condição lógica em uma variável. O retorno deste if será true ou false.
 // ========================= FIM OPERADORES LÓGICOS =====================================//
 
+// ==================== ÍNICIO CONDIÇÃO TERNÁRIA ============================ //
+// Ele avalia quando há apenas duas verificações no if
+    //var sexo = 'M';
+   // if (sexo === 'M'){
+     //   return 'Masculino';
+   // } else {
+      //  return 'Feminino';
+   // }
+// o código acima poderá ser reduzido para ao código abaixo ( serve apenas para condições simples, igual a de cima)
+    //returno (sexo === 'M') ? 'Masculino' : 'Feminino';
+// ================== FIM CONDIÇÃO TERNÁRIA ================================= //
 
+
+// ============== ÍNICIO DAS ESTRUTURAS DE REPETIÇÕES ====================== //
+// FOR: sempre indicado quando conhecemos o intervalo
+// WHILE: sempre indicado quando desconhecemos o intervalo
+//for (var i = 0 ; i <= 100 ; i ++) { // inicial 1 com condição de parada 100 somando uma unidade a mais
+   // console.log(i);
+//}
+
+var j = 0;
+while (j <= 100) {
+    console.log(j);
+    j ++;
+}
+// ============== FIM DAS ESTRUTURAS DE REPETIÇÕES ========================= //
 
 
     </script>
