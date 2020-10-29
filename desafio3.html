@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"e retorna um booleano true/false caso exista ou não.
+    <script>
+        function temHabilidade(skill, find) {
+            return (skill.indexOf(find) >= 0);
+          }        
+        var skill = ['javascript', 'reactjs', 'React native'];
+        var resultado = temHabilidade(skill, 'javascript');
+        console.log(resultado);
+
+    </script>
+</body>
+</html>
